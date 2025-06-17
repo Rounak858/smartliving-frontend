@@ -1,12 +1,16 @@
 // src/App.tsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SmartLivingDashboard from './components/SmartLivingDashboard';
-import './index.css'; // Make sure your Tailwind CSS is imported
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <SmartLivingDashboard />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SmartLivingDashboard />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 
