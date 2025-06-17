@@ -8,10 +8,10 @@ interface SmartObject {
 
 const SmartLivingDashboard: React.FC = () => {
   const [objects, setObjects] = useState<SmartObject[]>([
-    { id: "fan", name: "Fan", isOn: false },
-    { id: "light", name: "Light", isOn: false },
-    { id: "pump", name: "Pump", isOn: false },
-    { id: "heater", name: "Heater", isOn: false },
+    { id: "fan", name: "3 pin socket", isOn: false },
+    { id: "light", name: "2 pin socket", isOn: false },
+    { id: "pump", name: "Light 1", isOn: false },
+    { id: "heater", name: "Light 2", isOn: false },
   ]);
 
   const ws = useRef<WebSocket | null>(null);
