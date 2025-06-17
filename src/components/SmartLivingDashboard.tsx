@@ -17,7 +17,7 @@ const SmartLivingDashboard: React.FC = () => {
   const ws = useRef<WebSocket | null>(null);
 
   useEffect(() => {
-    ws.current = new WebSocket("wss://smartliving.ddns.net:5050");
+    ws.current = new WebSocket("wss://smartliving.ddns.net/ws");
 
     ws.current.onopen = () => {
       console.log("WebSocket connection opened");
